@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .soruBaslik{
+            font-size: 20pt;
+            height: 50px;
+        }
+        .panel{
+            background-color: #fefefe;
+            padding: 20px;
+            display: none;
+            width: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="soruBaslik"> Kargomun kata teslimatı mümkünmüdür</div>
+    <div class="panel">
+        <p>Kargonuz,  0-30 kg/desi aralığında ve tek parça ise kargonuzun kata teslimatı yapılır. 
+        Tek parçada ağırlığı 31kg - 100 kg arasında veya (ağırlığı 100 kg altında olmak kaydıyla) hacmi 31 desi– 300 desi olan ve en uzun kenarı 270 cm’ye kadar olan kargoların teslimatı bina kapısından yapılır, kata çıkarılmaz.
+        </p>
+    </div>
+    <div  class="soruBaslik"> Aras Tahsilatlı ile İlgili Sıkça Sorulan Sorular
+    </div>
+    <div class="panel">
+        <p> 
+            İnternet, TV, telefon gibi elektronik ticaret araçları ile ürün satışı yapan firmaların,
+
+Müşteri siparişlerinin alıcılarına teslimatını
+Ürün bedelinin teslim anında kapıda tahsilatını
+Tahsil edilen tutarın satıcının banka hesabına transferini sağlayan bir hizmettir.
+        </p>
+    </div>
+    <div  class="soruBaslik"> Aras Tahsilatlı ile ürün bedeli nasıl tahsil edilir?
+    </div>
+    <div class="panel">
+        <p> 
+            Nakit ve kredi kartı ödeme seçenekleriyle ürün bedeliniz alıcıdan kapıda tahsil edilebilir. Ödeme seçeneğ, sipariş kargoya teslim edilmeden önce alıcı ya da satıcı tarafından belirlenir. Ürün bedeli, kargonun teslimatı esnasında belirlenmiş olan ödeme seçeneğine göre alıcıdan tahsil edilir.
+        </p>
+    </div>
+    
+    
+        <script>
+            $(document).ready(function(){
+            $(".soruBaslik").click(function(){
+                $(this).next().slideToggle(500);
+            });
+        })
+        </script>
+</body>
+</html>

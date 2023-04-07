@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event listener</title>
+</head>
+<body>
+    <button id="btn_tikla">Tıkla</button>
+    <label id="ekran"></label>
+    <script>
+        const elemet = document.getElementById("btn_tikla");
+        elemet.addEventListener("click",yazdir);
+        function yazdir()
+        {
+            document.getElementById("ekran").innerHTML = "nabünüz?"
+        }
+    </script>
+</body>
+</html>

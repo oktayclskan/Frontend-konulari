@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h2>text(), html(), val()</h2>
+    <p id="metin">Bu paragraf <i>sadas</i> metni içeriği <a href="">asdsa</a></p>
+    <button id="btn1"> metin göster</button>
+    <button id="btn2">html halini göster</button>
+    <br>
+    <p>İsim = <input type="text" id="tb_isim"></p>
+    <button id="btn3">Değer Göster</button>
+    <br>
+    <br>
+    <a href="https://wwww.google.com" id="link">google git</a><br><br>
+    <button id="btn4">nerelere gidiyorsun</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text :" + $("#metin").text());
+            });
+
+            $("#btn2").click(function(){
+                alert("Text :" + $("#metin").html());
+            });
+
+            $("#btn3").click(function(){
+                alert("Val :" + $("#tb_isim").val());
+            });
+
+            $("#btn4").click(function(){
+                alert("attribute :" + $("#link").attr("href"));
+            });
+        })
+    </script>
+</body>
+</html>

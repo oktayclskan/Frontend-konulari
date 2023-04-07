@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(206,112,240,1) 40%, rgba(0,212,255,1) 100%);
+}
+.loginRegisterContainer{
+    width: 400px;
+    height: 415px;
+    border-radius: 10px;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color:whitesmoke;
+    
+}
+.loginRegisterContainer .main .title{
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: 1px solid silver;
+    
+}
+.loginRegisterContainer .main .title h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 900;
+    font-size: 23pt;
+}
+.loginRegisterContainer .main .row{
+    text-align: center;
+    margin-top: 20px;
+}
+.loginRegisterContainer .main .row input{
+    border-style: none;
+    border-bottom: 2px solid silver;
+    width: 300px;
+    height: 30px;
+    outline: none;
+    background-color:whitesmoke;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 12pt;
+    color: silver;
+}
+.loginRegisterContainer .main .row .loginbtn{
+    padding: 7px;
+    width: 320px;
+    border:none;
+    background-color:#1370C4;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: 900;
+    color: whitesmoke;
+    font-size: 13pt;
+}
+.loginRegisterContainer .main span{
+    margin-left: 50px;
+    color: silver;
+    font-size: 13pt;
+}
+.loginRegisterContainer .main .row span{
+    color: silver;
+    margin-left: -25px;
+    font-size: 15pt;
+    
+}
+.loginRegisterContainer .main .row span a{
+    text-decoration: none;
+    color: #1370C4;
+    font-size: 13pt;
+}

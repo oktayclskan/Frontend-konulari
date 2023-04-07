@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title></title>
+    <link rel="stylesheet" href="login.css">
+</header>
+
+<body>
+    <div class="loginRegisterContainer">
+        <div class="main">
+            <div class="title">
+                <h2> Login </h2>
+                
+            </div>
+            <div style="margin-top: 50px;" class="row">
+                
+                <input type="email" placeholder="Username" class="inputbox">
+            </div>
+            <div class="row">
+                <input type="password" placeholder="Password" class="inputbox" onfocusout="inputvalidate(this)">
+            </div>
+                <span>Forget Password ?</span>
+            <div class="row">
+                <button type="button" class="loginbtn" onclick="Girişvar()">Login</button>
+            </div>
+            <div class="row">
+                <span>Not a member? <a href="">Singup</a></span>
+
+            </div>
+        </div>
+    </div>
+    <script>
+       // alert("Hoşgeldiniz") 
+       function inputvalidate(a)
+    {
+        var password = a.value;
+        
+        if(password.length < 6)
+        {
+            alert("Şifre en az altı karakter olmalıdır")
+            a.style.borderColor = "red"
+        }
+        
+    }
+    function Girişvar()
+    {
+        alert("Girişyapıldı");
+    }
+    </script>
+</body>
+
+
+
+</html>

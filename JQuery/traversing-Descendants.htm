@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .container *{
+            display: block;
+            border: 2px solid lightgray;
+            color: lightgreen;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 500px;">
+        <p class="ilkcocuk">p (child)
+            <span> span (Grand-child)</span>
+        </p>
+        <p>p (child)
+            <span> span (Grand-child)</span>
+        </p>
+    </div>
+    children = gecerli elemanın bir alt elemanlarını alır
+    find("span") = cocuk veya torun bulmaya yarar
+    find(*) = tüm cocuk veya torun bulmaya yarar
+    <script>
+        $(document).ready(function(){
+            //$("div").children().css({"color" : "red","border":"2px solid red"})
+            //$("div").children("p.ilkcocuk").css({"color" : "red","border":"2px solid red"})
+            //$("div").find("span").css({"color" : "red","border":"2px solid red"})
+        })
+    </script>
+</body>
+</html>

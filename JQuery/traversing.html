@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .main *{
+            display: block;
+            border: 2px solid lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("span").parent().css({"color":"red","border":"2px solid red"})
+        })
+    </script>
+</head>
+<body>
+    <div class="main" style="margin-left: 390px; margin-top: 70px;">
+        Main()
+        <div style="width: 500px;">
+           div( great-grandParent)
+            <ul>ul(Grandparent)
+                <li>li(direct parent)
+                    <span style="height: 150px;">span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    Parent = bir üst parent
+    Parents = tüm üst parentlar
+    ParentsUntil("") = Belirtilen parent'a kadar
+</body>
+</html>

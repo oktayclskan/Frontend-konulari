@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+        <script src="Scripts/iyiyasa.js">
+
+        </script>
+        <script>
+            function fonksiyon(){
+                document.getElementById("yazi").innerHTML="Deneme";
+            }
+        </script>
+    </header>
+    <body>
+        <h3>İlk java Script Dokümanım</h3>
+        <button type="button" onclick="document.getElementById('yazi').innerHTML='tıkladım'">Bana Tıkla</button>
+        
+        <button type="button" onclick="document.getElementById('yazi').style.color='Red'">Renk değiştir</button>
+        <button type="button" onclick="fonksiyon()">Head bloğu</button>
+        <button type="button" onclick="ikinciFonksiyon()">ikinciFonksiyon</button>
+        <button type="button" onclick="ucuncuFonksiyonum()">ucuncuFonksiyonum</button>
+        <label id="yazi">ben bir labelim</label>
+        <script>
+            alert("Hüseyin bu senin için") //sayfa acılırken
+            function ikinciFonksiyon()
+            {
+                alert("Nabünüz lan");
+            }
+        </script>
+    </body>
+</html>

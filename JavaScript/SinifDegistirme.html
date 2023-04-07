@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+        <style>
+            .pembekutu{
+                background-color: orangered;
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            .turuncukutu{
+                background-color: orange;
+                width: 400px;
+                height: 250px;
+                border-radius: 15px;
+                color: white;
+                padding: 20px;
+            }
+        </style>
+    </header>
+    <body>
+        <div id="kutu" class="pembekutu" onclick="dicvclick()">div içeriği yazısı</div>
+        <script>
+            function dicvclick()
+            {
+                document.getElementById("kutu").className ="turuncukutu";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+        <script src="Scripts/FormElemanlari.js"></script>
+        <style>
+            .container{
+                width: 300px;
+                height: 200px;
+                margin: 50px auto;
+                border: 1px solid silver;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .row
+            {
+                padding-bottom: 20px;
+            }
+            .inputBox
+            {
+                width: 280px;
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid silver;
+            }
+            .inputBox:focus{
+                width: 280px;
+                outline:1px solid green;
+                background-color: bisque;
+            }
+
+        </style>
+    </header>
+    <body>
+        <div class="container">
+            <div class="row">
+                Kullanıcı adı <br>
+                <input type="text" class="inputBox" onfocusout="inputvalidate(this)">
+            </div>
+           <div class="row">
+            Şifre <br>
+            <input type="password" class="inputBox" onfocusout="inputvalidate(this)">
+           </div>
+           
+        </div>
+    </body>
+</html>

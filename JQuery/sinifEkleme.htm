@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .mavi{
+            color: blue;
+        }
+        .onemli{
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Başlık 1</h1>
+    <h2>Başlık 2</h2>
+    <p>Bu bir paragraf</p>
+    <p>buda bir paragraf</p>
+    <div>bu bir div</div>
+    <span>bu bir span</span> <br>
+    <button id="btn_sinifEkle">sınıf ekle</button>
+    <button id="btn_sinifSil">sınıf sil</button>
+    <button id="btn_sinifToggle">Sınıf Toggle</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn_sinifEkle").click(function(){
+                $("h1,h2,p").addClass("mavi");
+                $("div,p").addClass("onemli");
+                $("span").addClass("mavi onemli")
+            })
+            $("#btn_sinifSil").click(function(){
+                $("h1,h2,p").removeClass("mavi");
+            })
+            $("#btn_sinifToggle").click(function(){
+                $("h1,h2,p").toggleClass("mavi");
+            })
+        })
+    </script>
+    
+</body>
+</html>

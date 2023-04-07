@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            height: 50px;
+            background-color:red;
+        }
+        .header .menu{
+            padding:10px;
+            margin-top: 5px;
+            float: left;
+            
+           
+        }
+        .header .menu li{
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+        #dllmenu{
+            width: 100px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <button style="margin-left: 350px;" class="menu" id="MenuAç">Oyunlar</button>
+    <div style="margin-left: 350px;" class="menu"  id="dllmenu">
+        <ul>
+            <li>Gta5</li>
+            <li>Csgo</li>
+            <li>Valheim</li>
+            <li>lol</li>
+        </ul>
+    </div>
+
+    <button  class="menu" id="MenuAç">Oyunlar</button>
+    <div class="menu"  id="dllmenu">
+        <ul>
+            <li>Gta5</li>
+            <li>Csgo</li>
+            <li>Valheim</li>
+            <li>lol</li>
+        </ul>
+    </div>
+</div>
+    <script>
+        $(document).ready(function(){
+            $("#MenuAç").click(function(){
+                $("#dllmenu").toggle();
+                
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+        .slider{
+            -webkit-appearance: none;
+            width: 300px;
+            height: 15px;
+            border-radius: 7px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+        }
+        .slider:hover{
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(59,88,91);
+            cursor:pointer;
+        }
+        .slider::-webkit-range-thumb{
+            -webkit-appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(59,88,91);
+            cursor:pointer;
+        }
+        
+        input{
+            margin-left: 25px;
+        }
+        p{
+            margin-left: 25px;
+            color: white;
+        }
+        .kutu{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            padding: 5px;
+            margin-left: 500px;
+            border-radius: 5px;
+            margin-top: -150;
+        }
+        h3{
+            color: red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h3>width</h3><input id="width" type="range" max="500" value="100" oninput="boyut()">
+    <h3>height</h3><input id="height" type="range" max="500" value="100" oninput="boyut()">
+    <h3>radius</h3><input id="radius" type="range" max="50" value="0" oninput="boyut()">
+    <div class="kutu" id="divboyut"></div>
+    <script>
+            function boyut(){
+                var width =document.getElementById("width").value;
+                var height =document.getElementById("height").value;
+                var radius =document.getElementById("radius").value;
+                document.getElementById("divboyut").style.width=width;
+                document.getElementById("divboyut").style.height=height;
+                document.getElementById("divboyut").style.borderRadius=radius+`%`;
+            }
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .kirmizibaslik{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>ben bir baslığım html sayfasında</h1>
+    <button onclick="tikla()">tıkla</button>
+    <script>
+        function tikla()
+        {
+            const ozellik = document.createAttribute("class");
+            ozellik.value = "kirmizibaslik";
+            document.getElementsByTagName("h1")[0].setAttributeNode(ozellik);
+        }
+    </script>
+</body>
+</html>

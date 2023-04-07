@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+    </header>
+    <body>
+        <div id="huseyin" style="background-color: blue; width: 300px; height: 300px;" onclick="hanimKoy()">
+        </div>
+        <br>
+        <button type="button" onclick="hanimKoy()">hanım köy modu aktif et</button>
+        <script>
+            var ishanimkoy=false;
+            function hanimKoy()
+            {
+                if(ishanimkoy == false)
+                {
+                document.getElementById("huseyin").style.backgroundColor="Pink";
+                document.getElementById("huseyin").style.width="500px";
+                ishanimkoy=true;
+                }
+                else
+                {
+                document.getElementById("huseyin").style.backgroundColor="Blue";
+                document.getElementById("huseyin").style.width="300px";
+                ishanimkoy = false;
+                }
+            }
+        </script>
+
+    </body>
+</html>

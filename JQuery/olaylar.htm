@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    
+</head>
+<body>
+    <h3>click olayı</h3>
+    <p>lütfen tıklayınız 1</p>
+    <p>lütfen tıklayınız 2</p>
+
+    <h3>click olayı</h3>
+    <label>lütfen tıklayınız 1</label>
+    <label>lütfen tıklayınız 2</label>
+
+    <h3>mouse enter olayı</h3>
+    <span id="s1">üzerime geldipinde gelme kacarım</span>
+
+    <h3>MOUSE leave olayı</h3>
+    <span id="s2">ben bir span ım leave</span>
+
+    <h3>MOUSEup</h3>
+    <span id="s3">ben bir span ım mouseup</span>
+
+    <h3>focus ve blur olayı</h3>
+    İsim = <input type="text"><br>
+    Email = <input type="text">
+
+    <h3>toplu on kulllanımı</h3>
+    <span id="s5"> üzerinde gel (mouser enter), tıkla(click) , ayrıl(mouse leave) ,....</span>
+
+    <h3>on kullanımı</h3>
+    <span id="s4">on kullanımı</span>
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            })
+            $("label").dblclick(function(){
+                $(this).hide();S
+            })
+            $("#s1").mouseenter(function(){
+                alert("S1 üzerimdesin")
+            })
+            $("#s2").mouseleave(function(){
+                alert("sen de başını alıp gitme ne olurr")
+            })
+            $("#s3").mouseup(function(){
+                alert("mouse bırakıldı")
+            })
+            $("input").focus(function(){
+                $(this).css("background-color","aqua");
+            })
+            $("input").blur(function(){
+                $(this).css("background-color","red");
+            })
+            $("#s4").on("click",function(){
+                $(this).hide();
+            })
+            $("#s5").on({
+                mouseenter: function(){
+                    $(this).css("background-color","red");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color","yellow")
+                },
+                click:function(){
+                    $(this).css("background-color","pink");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #C4F0F6;
+}
+.loginTwoContainer{
+    width: 400px;
+    height: 415px;
+    border-radius: 50%;
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background: rgb(23,23,23);
+background: linear-gradient(90deg, rgba(23,23,23,1) 51%, rgba(0,0,0,1) 52%);
+    
+}
+.loginTwoContainer .main .title{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.loginTwoContainer .main .row{
+    text-align: center;
+    margin-top: 20px;
+}
+.loginTwoContainer .main .row h2{
+    padding-top: 100px;
+    color: silver;
+   
+}
+.loginTwoContainer .main .row input{
+    margin-top: 15px;
+    border-style: none;
+    border: 2px solid #333C39;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    background-color:#3C4642;
+    padding-left:25px ;
+    font-weight: 500;
+    font-size: 10pt;
+    color: silver;
+   border-radius: 5px;
+    
+}
+.loginTwoContainer .main .row span i {
+    color: silver;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 5px;
+}
+.loginTwoContainer .main .row .loginbtn{
+    float: right;
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 125px;
+    background-color: #EB4B5C;
+    color: whitesmoke;
+    opacity: 0.6;
+    font-size: 20pt;
+    font-weight: 700;
+    border:1px solid #EB4B5C;
+}

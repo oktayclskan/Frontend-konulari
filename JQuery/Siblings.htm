@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .kardesler * {
+            display: block;
+            border: 2px solid lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kardesler">
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <p>p</p>
+    </div>
+    ("h2").siblings() = h2 nin kardeşleri <br>
+    ("h2").siblings("p") = h2 nin p etiketli kardeşleri <br>
+    ("h2").next()= h2 den sonraki kardeş<br>
+    ("h2").nextAll()= h2 den sonraki tüm kardeşler<br>
+    ("h2").nextUntil= h2 den h6 ya kadar olan kardeşler <br>
+    ("h2").prev() = onceki kardeşler <br>
+    ("h2").prevAll() = onceki tüm kardeşler <br>
+    ("h2").prevUntil() = h6 ya kadar önceki tüm kardeşler<br>
+    
+    <script>
+        $(document).ready(function () {
+            //$("h2").siblings().css({"color":"red","border":"2px solid red"})
+            //$("h2").siblings("p").css({"color":"red","border":"2px solid red"})
+            //$("h2").next().css({ "color": "red", "border": "2px solid red" })
+            //$("h2").nextAll().css({ "color": "red", "border": "2px solid red" })
+            //$("h2").nextUntil("h6").css({ "color": "red", "border": "2px solid red" })
+            //$("h2").prev().css({ "color": "red", "border": "2px solid red" })
+            //$("h2").prevAll().css({ "color": "red", "border": "2px solid red" })
+           //
+            $("h2").prevUntil("h6").css({ "color": "red", "border": "2px solid red" })
+        })
+    </script>
+</body>
+
+</html>

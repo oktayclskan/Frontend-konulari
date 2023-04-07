@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        #panel,#acordion {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #dedede;
+        }
+        #acordion{
+            background-color: #c0c0c0;
+            padding: 10px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        #panel{
+            background-color: #fefefe;
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="stop">Durdur</button>
+    <div id="acordion">Detay için tıklayınız </div>
+    <div id="panel">hello world :P</div>
+    <script>
+        //slideDown SlideUp,SlideToggle toggle ilk bastığında aşağı sonra yukarı tek tek yapma gerek yok
+        $(document).ready(function(){
+            $("#acordion").click(function(){
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function(){
+                $("#panel").stop();
+            })
+        })
+    </script>
+</body>
+</html>
